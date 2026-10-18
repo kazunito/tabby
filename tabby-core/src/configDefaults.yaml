@@ -43,7 +43,7 @@ recoverTabs: true
 enableAnalytics: true
 enableWelcomeTab: true
 electronFlags: []
-enableAutomaticUpdates: true
+enableAutomaticUpdates: false
 hideTray: false
 version: 1
 vault: null
