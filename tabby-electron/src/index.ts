@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core'
-import { PlatformService, LogService, UpdaterService, DockingService, HostAppService, ThemesService, Platform, AppService, ConfigService, WIN_BUILD_FLUENT_BG_SUPPORTED, isWindowsBuild, HostWindowService, HotkeyProvider, ConfigProvider, FileProvider } from 'tabby-core'
+import { PlatformService, LogService, UpdaterService, DockingService, HostAppService, ThemesService, Platform, AppService, ConfigService, LocaleService, WIN_BUILD_FLUENT_BG_SUPPORTED, isWindowsBuild, HostWindowService, HotkeyProvider, ConfigProvider, FileProvider } from 'tabby-core'
 import { TerminalColorSchemeProvider, TerminalContextMenuItemProvider, TerminalDecorator } from 'tabby-terminal'
 import { SFTPContextMenuItemProvider, SSHProfileImporter, AutoPrivateKeyLocator } from 'tabby-ssh'
 import { PTYInterface, ShellProvider, UACService } from 'tabby-local'
@@ -16,6 +16,7 @@ import { ElectronFileProvider } from './services/fileProvider.service'
 import { ElectronHostAppService } from './services/hostApp.service'
 import { ElectronService } from './services/electron.service'
 import { DockMenuService } from './services/dockMenu.service'
+import { AppMenuService } from './services/appMenu.service'
 import { ElectronUACService } from './services/uac.service'
 
 import { ElectronHotkeyProvider } from './hotkeys'
@@ -96,6 +97,8 @@ export default class ElectronModule {
         themeService: ThemesService,
         app: AppService,
         dockMenu: DockMenuService,
+        appMenu: AppMenuService,
+        locale: LocaleService,
     ) {
         config.ready$.toPromise().then(() => {
             touchbar.update()
@@ -145,6 +148,12 @@ export default class ElectronModule {
 
         config.ready$.toPromise().then(() => {
             dockMenu.update()
+            appMenu.update()
+        })
+
+        locale.localeChanged$.subscribe(() => {
+            dockMenu.update()
+            appMenu.update()
         })
     }
 

@@ -20,6 +20,7 @@ export class Application {
     private cachedPlasmaVersion?: [number, number] | null
     private globalHotkey$ = new Subject<void>()
     private quitRequested = false
+    private menuLabels: Record<string, string> = {}
     userPluginsPath: string
 
     // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
@@ -36,6 +37,14 @@ export class Application {
         ipcMain.handle('app:save-config', async (event, config) => {
             await saveConfig(config)
             this.broadcastExcept('host:config-change', event.sender, config)
+        })
+
+        ipcMain.on('app:set-menu-labels', (_event, labels) => {
+            this.menuLabels = labels
+            if (process.platform === 'darwin') {
+                this.setupMenu()
+            }
+            this.setupTrayMenu()
         })
 
         ipcMain.on('app:register-global-hotkey', (_event, specs) => {
@@ -201,17 +210,18 @@ export class Application {
         }
 
         this.tray.on('click', () => setTimeout(() => this.focus()))
-
-        const contextMenu = Menu.buildFromTemplate([{
-            label: 'Show',
-            click: () => this.focus(),
-        }])
-
-        if (process.platform !== 'darwin') {
-            this.tray.setContextMenu(contextMenu)
-        }
-
+        this.setupTrayMenu()
         this.tray.setToolTip(`Tabby ${app.getVersion()}`)
+    }
+
+    private setupTrayMenu () {
+        if (!this.tray || process.platform === 'darwin') {
+            return
+        }
+        this.tray.setContextMenu(Menu.buildFromTemplate([{
+            label: this.menuLabels['Show'] ?? 'Show',
+            click: () => this.focus(),
+        }]))
     }
 
     disableTray (): void {
@@ -296,14 +306,15 @@ export class Application {
     }
 
     private setupMenu () {
+        const t = (label: string) => this.menuLabels[label] ?? label
         const template: MenuItemConstructorOptions[] = [
             {
                 label: 'Application',
                 submenu: [
-                    { role: 'about', label: 'About Tabby' },
+                    { role: 'about', label: t('About Tabby') },
                     { type: 'separator' },
                     {
-                        label: 'Preferences',
+                        label: t('Preferences'),
                         accelerator: 'Cmd+,',
                         click: async () => {
                             if (!this.hasWindows()) {
@@ -313,14 +324,14 @@ export class Application {
                         },
                     },
                     { type: 'separator' },
-                    { role: 'services', submenu: [] },
+                    { role: 'services', label: t('Services'), submenu: [] },
                     { type: 'separator' },
-                    { role: 'hide' },
-                    { role: 'hideOthers' },
-                    { role: 'unhide' },
+                    { role: 'hide', label: t('Hide Tabby') },
+                    { role: 'hideOthers', label: t('Hide Others') },
+                    { role: 'unhide', label: t('Show All') },
                     { type: 'separator' },
                     {
-                        label: 'Quit',
+                        label: t('Quit'),
                         accelerator: 'Cmd+Q',
                         click: () => {
                             this.quitRequested = true
@@ -330,41 +341,43 @@ export class Application {
                 ],
             },
             {
-                label: 'Edit',
+                label: t('Edit'),
                 submenu: [
-                    { role: 'undo' },
-                    { role: 'redo' },
+                    { role: 'undo', label: t('Undo') },
+                    { role: 'redo', label: t('Redo') },
                     { type: 'separator' },
-                    { role: 'cut' },
-                    { role: 'copy' },
-                    { role: 'paste' },
-                    { role: 'pasteAndMatchStyle' },
-                    { role: 'delete' },
-                    { role: 'selectAll' },
+                    { role: 'cut', label: t('Cut') },
+                    { role: 'copy', label: t('Copy') },
+                    { role: 'paste', label: t('Paste') },
+                    { role: 'pasteAndMatchStyle', label: t('Paste and Match Style') },
+                    { role: 'delete', label: t('Delete') },
+                    { role: 'selectAll', label: t('Select All') },
                 ],
             },
             {
-                label: 'View',
+                label: t('View'),
                 submenu: [
-                    { role: 'toggleDevTools' },
+                    { role: 'toggleDevTools', label: t('Toggle Developer Tools') },
                     { type: 'separator' },
-                    { role: 'togglefullscreen' },
+                    { role: 'togglefullscreen', label: t('Toggle Full Screen') },
                 ],
             },
             {
                 role: 'window',
+                label: t('Window'),
                 submenu: [
-                    { role: 'minimize' },
-                    { role: 'zoom' },
+                    { role: 'minimize', label: t('Minimize') },
+                    { role: 'zoom', label: t('Zoom') },
                     { type: 'separator' },
-                    { role: 'front' },
+                    { role: 'front', label: t('Bring All to Front') },
                 ],
             },
             {
                 role: 'help',
+                label: t('Help'),
                 submenu: [
                     {
-                        label: 'Website',
+                        label: t('Website'),
                         click () {
                             shell.openExternal('https://eugeny.github.io/tabby')
                         },
@@ -374,7 +387,7 @@ export class Application {
         ]
 
         if (process.env.TABBY_DEV) {
-            template[2].submenu!['unshift']({ role: 'reload' })
+            template[2].submenu!['unshift']({ role: 'reload', label: t('Reload') })
         }
 
         Menu.setApplicationMenu(Menu.buildFromTemplate(template))
