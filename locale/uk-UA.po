@@ -2572,3 +2572,83 @@ msgctxt "[Dynamic] port forwarding"
 msgid "id.port-forwarding.dynamic"
 msgstr "Динамічне"
 
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "About Tabby"
+msgstr "Про Tabby"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Preferences"
+msgstr "Параметри…"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Services"
+msgstr "Служби"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Hide Tabby"
+msgstr "Сховати Tabby"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Hide Others"
+msgstr "Сховати інші"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Show All"
+msgstr "Показати всі"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Undo"
+msgstr "Відмінити"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Redo"
+msgstr "Повторити"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Cut"
+msgstr "Вирізати"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Paste and Match Style"
+msgstr "Вставити зі збереженням стилю"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Select All"
+msgstr "Вибрати все"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "View"
+msgstr "Вигляд"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Toggle Developer Tools"
+msgstr "Показати/сховати інструменти розробника"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Toggle Full Screen"
+msgstr "Увімкнути/вимкнути повноекранний режим"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Reload"
+msgstr "Перезавантажити"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Minimize"
+msgstr "Згорнути"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Zoom"
+msgstr "Масштаб"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Bring All to Front"
+msgstr "Усі вікна на передній план"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Help"
+msgstr "Довідка"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Website"
+msgstr "Вебсайт"

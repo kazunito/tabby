@@ -2573,3 +2573,83 @@ msgctxt "[Dynamic] port forwarding"
 msgid "id.port-forwarding.dynamic"
 msgstr "id.port-forwarding.dynamic"
 
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "About Tabby"
+msgstr "Tabby Hakkında"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Preferences"
+msgstr "Ayarlar…"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Services"
+msgstr "Servisler"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Hide Tabby"
+msgstr "Tabby'yi Gizle"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Hide Others"
+msgstr "Diğerlerini Gizle"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Show All"
+msgstr "Tümünü Göster"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Undo"
+msgstr "Geri Al"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Redo"
+msgstr "Yinele"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Cut"
+msgstr "Kes"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Paste and Match Style"
+msgstr "Yapıştır ve Stili Eşle"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Select All"
+msgstr "Tümünü Seç"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "View"
+msgstr "Görüntü"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Toggle Developer Tools"
+msgstr "Geliştirici Araçlarını Aç/Kapat"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Toggle Full Screen"
+msgstr "Tam Ekranı Aç/Kapat"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Reload"
+msgstr "Yeniden Yükle"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Minimize"
+msgstr "Küçült"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Zoom"
+msgstr "Büyüt/Küçült"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Bring All to Front"
+msgstr "Tümünü Öne Getir"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Help"
+msgstr "Yardım"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Website"
+msgstr "Web Sitesi"

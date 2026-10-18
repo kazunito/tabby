@@ -2572,3 +2572,83 @@ msgctxt "[Dynamic] port forwarding"
 msgid "id.port-forwarding.dynamic"
 msgstr "Dynamické"
 
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "About Tabby"
+msgstr "O aplikaci Tabby"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Preferences"
+msgstr "Nastavení…"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Services"
+msgstr "Služby"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Hide Tabby"
+msgstr "Skrýt Tabby"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Hide Others"
+msgstr "Skrýt ostatní"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Show All"
+msgstr "Zobrazit vše"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Undo"
+msgstr "Odvolat"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Redo"
+msgstr "Znovu"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Cut"
+msgstr "Vyjmout"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Paste and Match Style"
+msgstr "Vložit a použít styl"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Select All"
+msgstr "Vybrat vše"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "View"
+msgstr "Zobrazení"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Toggle Developer Tools"
+msgstr "Zobrazit/skrýt vývojářské nástroje"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Toggle Full Screen"
+msgstr "Zapnout/vypnout režim celé obrazovky"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Reload"
+msgstr "Znovu načíst"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Minimize"
+msgstr "Minimalizovat"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Zoom"
+msgstr "Zvětšit/zmenšit"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Bring All to Front"
+msgstr "Převést vše do popředí"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Help"
+msgstr "Nápověda"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Website"
+msgstr "Webové stránky"

@@ -2572,3 +2572,83 @@ msgctxt "[Dynamic] port forwarding"
 msgid "id.port-forwarding.dynamic"
 msgstr "Динамичен"
 
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "About Tabby"
+msgstr "Относно Tabby"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Preferences"
+msgstr "Настройки…"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Services"
+msgstr "Услуги"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Hide Tabby"
+msgstr "Скрий Tabby"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Hide Others"
+msgstr "Скрий другите"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Show All"
+msgstr "Покажи всички"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Undo"
+msgstr "Отмени"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Redo"
+msgstr "Повтори"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Cut"
+msgstr "Изрежи"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Paste and Match Style"
+msgstr "Постави и съгласувай стила"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Select All"
+msgstr "Избери всички"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "View"
+msgstr "Изглед"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Toggle Developer Tools"
+msgstr "Покажи/скрий инструментите за разработчици"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Toggle Full Screen"
+msgstr "Вкл./изкл. цял екран"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Reload"
+msgstr "Презареди"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Minimize"
+msgstr "Минимизирай"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Zoom"
+msgstr "Мащабиране"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Bring All to Front"
+msgstr "Изведи всички отпред"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Help"
+msgstr "Помощ"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Website"
+msgstr "Уебсайт"

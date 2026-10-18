@@ -2572,3 +2572,83 @@ msgctxt "[Dynamic] port forwarding"
 msgid "id.port-forwarding.dynamic"
 msgstr "Dynamic"
 
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "About Tabby"
+msgstr "Om Tabby"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Preferences"
+msgstr "Inställningar…"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Services"
+msgstr "Tjänster"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Hide Tabby"
+msgstr "Göm Tabby"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Hide Others"
+msgstr "Göm övriga"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Show All"
+msgstr "Visa alla"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Undo"
+msgstr "Ångra"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Redo"
+msgstr "Gör om"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Cut"
+msgstr "Klipp ut"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Paste and Match Style"
+msgstr "Klistra in och anpassa stil"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Select All"
+msgstr "Markera allt"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "View"
+msgstr "Innehåll"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Toggle Developer Tools"
+msgstr "Visa/göm utvecklarverktyg"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Toggle Full Screen"
+msgstr "Slå på/av helskärm"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Reload"
+msgstr "Läs in igen"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Minimize"
+msgstr "Minimera"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Zoom"
+msgstr "Zooma"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Bring All to Front"
+msgstr "Lägg alla överst"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Help"
+msgstr "Hjälp"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Website"
+msgstr "Webbplats"

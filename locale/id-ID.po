@@ -1982,7 +1982,7 @@ msgstr "Integrasi Shell"
 #: locale/tmp-html/tabby-settings/src/components/profilesSettingsTab.component.html:50
 #: locale/tmp-html/tabby-settings/src/components/vaultSettingsTab.component.html:25
 msgid "Show"
-msgstr ""
+msgstr "Tampilkan"
 
 #: tabby-core/src/hotkeys.ts:275
 msgid "Show {type} profile selector"
@@ -2495,7 +2495,7 @@ msgstr ""
 #: locale/tmp-html/tabby-settings/src/components/windowSettingsTab.component.html:2
 #: tabby-settings/src/settings.ts:30
 msgid "Window"
-msgstr ""
+msgstr "Jendela"
 
 #: locale/tmp-html/tabby-settings/src/components/windowSettingsTab.component.html:112
 msgid "Window dimension along the edge"
@@ -2572,3 +2572,83 @@ msgctxt "[Dynamic] port forwarding"
 msgid "id.port-forwarding.dynamic"
 msgstr ""
 
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "About Tabby"
+msgstr "Tentang Tabby"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Preferences"
+msgstr "Pengaturan…"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Services"
+msgstr "Layanan"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Hide Tabby"
+msgstr "Sembunyikan Tabby"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Hide Others"
+msgstr "Sembunyikan Lainnya"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Show All"
+msgstr "Tampilkan Semua"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Undo"
+msgstr "Kembalikan"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Redo"
+msgstr "Ulangi"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Cut"
+msgstr "Potong"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Paste and Match Style"
+msgstr "Tempel dan Cocokkan Gaya"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Select All"
+msgstr "Pilih Semua"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "View"
+msgstr "Tampilan"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Toggle Developer Tools"
+msgstr "Alihkan Alat Pengembang"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Toggle Full Screen"
+msgstr "Alihkan Layar Penuh"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Reload"
+msgstr "Muat Ulang"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Minimize"
+msgstr "Minimalkan"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Zoom"
+msgstr "Perbesar/Perkecil"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Bring All to Front"
+msgstr "Bawa Semua ke Depan"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Help"
+msgstr "Bantuan"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Website"
+msgstr "Situs Web"

@@ -2572,3 +2572,83 @@ msgctxt "[Dynamic] port forwarding"
 msgid "id.port-forwarding.dynamic"
 msgstr "동적"
 
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "About Tabby"
+msgstr "Tabby에 관하여"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Preferences"
+msgstr "설정…"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Services"
+msgstr "서비스"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Hide Tabby"
+msgstr "Tabby 가리기"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Hide Others"
+msgstr "기타 가리기"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Show All"
+msgstr "모두 보기"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Undo"
+msgstr "실행 취소"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Redo"
+msgstr "실행 복귀"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Cut"
+msgstr "오려두기"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Paste and Match Style"
+msgstr "붙여넣고 스타일 일치시키기"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Select All"
+msgstr "전체 선택"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "View"
+msgstr "보기"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Toggle Developer Tools"
+msgstr "개발자 도구 토글"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Toggle Full Screen"
+msgstr "전체 화면 토글"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Reload"
+msgstr "새로 고침"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Minimize"
+msgstr "최소화"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Zoom"
+msgstr "확대/축소"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Bring All to Front"
+msgstr "모두 앞으로 가져오기"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Help"
+msgstr "도움말"
+
+#: tabby-electron/src/services/appMenu.service.ts
+msgid "Website"
+msgstr "웹사이트"
